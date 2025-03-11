@@ -102,12 +102,13 @@
             background: #FFA000;
             transform: scale(1.05);     
         }
+        
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
     <div class="container text-center py-4">
-        <img src="logohilifinal_8k.png" alt="Hilicare Logo" width="150" class="mb-3">
+        <img src="logohilifinal_8k.png" alt="Hilicare Logo" width="150" class="mb-3" style="background-color: white;">
         <h1 class="text-light">Hilicare Holi Gift Collection</h1>
         <p>Celebrate Holi with Hilicare's amazing gift sets!</p>
         
@@ -130,7 +131,7 @@
                 </div>
                 <div class="gift-card">
                     <img src="img/perfume6.jpeg" alt="Gulal Perfume">
-                    <div class="title">Gulal Perfume</div>
+                    <div class="title">Perfume</div>
                     <p><del>$18.00</del> <b>FREE</b></p>
                 </div>
             </div>
@@ -155,7 +156,7 @@
                 </div>
                 <div class="gift-card">
                     <img src="img/lipstick5.jpg" alt="Gulal Perfume">
-                    <div class="title">Gulal Perfume</div>
+                    <div class="title">Lipstick</div>
                     <p><del>$18.00</del> <b>FREE</b></p>
                 </div>
             </div>
@@ -182,5 +183,31 @@
             💬 Chat on WhatsApp
         </a>
     </div>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ff0000", "#ff7f00", "#ffff00", "#00ff00", "#0000ff", "#4b0082", "#9400d3"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.7, random: true },
+                size: { value: 5, random: true },
+                move: { enable: true, speed: 3, direction: "none", random: false, straight: false, out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "bubble" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    bubble: { distance: 150, size: 8, duration: 2, opacity: 1 },
+                    push: { particles_nb: 6 }
+                }
+            },
+            retina_detect: true
+        });
+        
+    </script>
 </body>
 </html>
